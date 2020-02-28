@@ -1,0 +1,38 @@
+Las preguntas teóricas ponerlas en un archivo respuestas.txt y ubicarlo dentro del proyecto , subirlo a github.com.
+
+Incluir en el mismo proyecto un archivo script.sql los comandos para crear la tabla e insertar los datos.
+
+1. Diagramar una clase llamada producto, con sus atributos y operaciones.
+	productos
+	----------
+	#idProd
+	#nombreProd
+	#precioProd
+	----------
+	+insertarProd
+	+obtenerPrec
+2. ¿Qué es un jar y para qué sirve?
+	Es un archivo que permite ejecutar aplicaiones y herramientas
+3. ¿Qué es el patrón MVC?
+	modelo vista y controlador, es unh patron de arquitectura de software
+4. Declarar un array y asignarle valores.
+public static void main(String[] args) {
+       int[]productos = {azucar,leche,manteca,huevo,harina,arroz};
+       int[]contador = new int[6];
+4.1 ¿Cómo se obtiene el primer valor del array?
+	int i = 0
+4.2 ¿y el último?
+	length-1
+4.3 ¿Con qué estructura de control se itera/recorre un array? de un ejemplo.
+	for (int i = 0; i < numeros.length; i++) {
+            contador[numeros[i]]+=1;
+5. En la empresa Apple Inc. necesitan un software para gestionar sus dispositivos, es necesario 
+hacer un crud de la tabla dispositivo con lo campos, nombre, precio, tipo. Se tiene que mostrar 
+la lista de productos y una opción para registrar, actualizar y borrar dispositivos.
+
+create database apple
+use apple
+create table dispositivo (id int, nombre varchar(30), precio int, tipo varchar(30));
+insert into dispositivo values (1,'iphone x',1000,'celular');
+insert into dispositivo values (2,'living room x',3000,'televisor');
+insert into dispositivo values (3,'smart watch x',800,'reloj');
